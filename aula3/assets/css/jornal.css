@@ -1,0 +1,48 @@
+img {
+	width: 120px;
+	height: 120px;
+	padding: 10px;
+}
+
+div {
+	width: 28.5%;
+	height: 198px;
+	float: left;
+	margin: 4px;
+	text-align: center;
+	padding: 10px;
+}
+
+div:hover {
+	cursor: pointer;
+}
+
+p {
+	margin-top: 25px;
+}
+
+.preto {
+	background-color: #000000;
+	color: #F8F8FF;
+}
+
+.verde {
+	background-color: #32CD32;
+}
+
+.azul {
+	background-color: #40E0D0;
+}
+
+.preto-light {
+	background-color: #363636;
+	color: #F8F8FF;
+}
+
+.verde-light {
+	background-color: #9ACD32;
+}
+
+.azul-light {
+	background-color: #5F9EA0;
+}

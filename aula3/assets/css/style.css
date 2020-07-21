@@ -1,0 +1,46 @@
+.menu {
+	width: 97%;
+	height: 46px;
+	background-color: #FFD700;
+}
+
+.menu li {
+	padding: 14px;
+	float: left;
+	list-style-type: none;
+}
+
+.menu li:hover {
+	background-color: #FFFF00;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: black;
+}
+
+.box {
+	width: 45%;
+	height: 250px;
+	float: left;
+	margin: 1%;
+}
+
+.cadastro {
+	background-color: #0431B4;
+	padding: 18px;
+}
+
+.login {
+	background-color: #8FBC8F;
+	padding: 18px;
+}
+
+.chamada {
+	margin-top: 320px;
+	width: 100%;
+	height: 120px;
+	background-color: #D8BFD8;
+	padding: 8px;
+	text-align: center;
+}
