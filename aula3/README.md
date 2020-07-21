@@ -1,5 +1,3 @@
-1. replicar o menu da index.html no arquivo noticia.html
-
 2. criar um codigo html no arquivo contato.html
 
 3. replicar o menu do index.html no contato.html

@@ -1,0 +1,14 @@
+.form_contato {
+	width: 68%;
+	height: 480px;
+	float: left;
+	background-color: #87CEFA;
+}
+
+.contatos {
+	width: 30%;
+	height: 480px;
+	float: left;
+	background-color: #B0C4DE;
+	margin-left: 1%;
+}
