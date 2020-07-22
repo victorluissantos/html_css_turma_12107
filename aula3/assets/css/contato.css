@@ -1,8 +1,9 @@
 .form_contato {
-	width: 68%;
+	width: 60%;
 	height: 480px;
 	float: left;
 	background-color: #87CEFA;
+	padding: 25px;
 }
 
 .contatos {
@@ -11,4 +12,27 @@
 	float: left;
 	background-color: #B0C4DE;
 	margin-left: 1%;
+	padding: 25px;
+}
+
+.form-control {
+	width: 100%;
+}
+
+.btn {
+	padding: 12px;
+	height: 42px;
+	background-color: #191970;
+	color: #F5FFFA;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #836FFF;
+	color: #363636;
+	cursor: pointer;
+}
+
+input {
+	margin: 2px;
 }

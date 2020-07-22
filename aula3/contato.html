@@ -18,31 +18,37 @@
 			</li>
 		</ul>
 		<div class="form_contato">
-			<form action="" method="POST">
+			<form action="sucesso.html" method="POST">
 				<h2>Contato</h2>
-				<input type="text" name="nome" placeholder="Digite seu nome" />
+				<input class="form-control" type="text" name="nome" placeholder="Digite seu nome" />
 				<br/>
-				<input type="email" name="email" placeholder="Digite seu email" />
+				<input class="form-control" type="email" name="email" placeholder="Digite seu email" />
 				<br />
-				<input type="text" name="telefone" placeholder="Digite seu telefone" />
+				<input class="form-control" type="text" name="telefone" placeholder="Digite seu telefone" />
 				<br />
 				<b>Selecione o Setor:</b>
-				<select name="Setor">
+				<select class="form-control" name="Setor">
 					<option value="RH">RH</option>
 					<option value="Administrativo">Administrativo</option>
 					<option value="Financeiro">Financeiro</option>
 					<option value="Suporte">Suporte</option>
 				</select>
 				<br />
-				<input type="text" name="assunto" placeholder="Assunto" />
+				<input class="form-control" type="text" name="assunto" placeholder="Assunto" />
 				<br/>
-				<textarea cols="90" rows="15" name="mensagem"></textarea>
+				<textarea class="form-control" cols="90" rows="10" name="mensagem"></textarea>
 				<br />
-				<input type="submit" value="Enviar Mensagem" />
+				<input class="btn" type="submit" value="Enviar Mensagem" />
 			</form>
 		</div>
 		<div class="contatos">
-			
+			<a href="tel:4133421223" target="_blank">4133421-223</a>
+			<br />
+			<a href="mailto:contato@loja.com.br?subject=Contato%20via%20Site&body=Boa%20Noite%20Este%20Email%20Esta%20sendo%20enviado%20via%20meu%20primeiro%20site." target="_blank">contato@loja.com.br</a>
+			<br/>
+			<a href="https://web.whatsapp.com/send?phone=5541998500112" target="_blank">41 99850-0112</a>
+			<br />
+			Rua Aderball Gaerther Stresser, 137
 		</div>
 	</body>
 </html>
