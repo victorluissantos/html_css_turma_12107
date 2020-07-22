@@ -1,0 +1,52 @@
+/* Definindo as propriedades do box de login */
+.box_login {
+	width: 20%;
+	height: 230px;
+	background-color: #E6E6FA;
+	margin-left: 38%;
+	margin-top: 3%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	padding: 2%;
+}
+/* Definindo uma imagem de fundo */
+body {
+	background-image: url('../img/gray-double-bell-clock.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+/* Definindo caracteristicas dos inputs*/
+.form-control {
+	width: 100% !important;
+	height: 30px;
+	border: none;
+	padding: 5px;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+/* Definindo evento para quando curso do mouser/focus estiver no input */
+.form-control:focus {
+	border: 4px #FFB1B4 solid;
+}
+/* Definindo propriedades para o button */
+.btn-default {
+	padding: 8px;
+	background-color: #FFB2B5;
+	border: none;
+	min-width: 130px;
+	margin-left: 25%;
+	cursor: pointer;
+}
+/* Definindo alteracoes para quando o cursor do mouse estiver em cima */
+.btn-default:hover {
+	background-color: #BAE7DE;
+}
+/* Definindo propriedades da imagem logo no box */
+.img-logo {
+	margin-left: 35%;
+}
+
+label {
+	font-weight: bold;
+}

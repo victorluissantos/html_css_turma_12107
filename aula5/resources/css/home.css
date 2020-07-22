@@ -1,0 +1,58 @@
+input[type=number] {
+	max-width: 80px;
+}
+
+.table-default {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.table-default thead {
+	background-color: #FFB4B7;
+}
+
+.table-default thead tr th:hover {
+	background-color: #FF69B4;
+}
+
+.table-default tbody {
+	background-color: #BFE8E0;
+	cursor: pointer;
+}
+
+.btn-yellow {
+	width: 100%;
+	background-color: #FAA72F;
+	border: none;
+	padding: 8px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.btn-yellow:hover {
+	background-color: gold;
+}
+
+.btn {
+	border: none;
+	padding: 8px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.btn-blue {
+	background-color: #6495ED;
+}
+
+.btn-blue:hover {
+	background-color: #1E90FF;
+}
+
+.btn-green {
+	background-color: #00FA9A;
+}
+
+.btn-green:hover {
+	background-color: #00FF7F;
+}
