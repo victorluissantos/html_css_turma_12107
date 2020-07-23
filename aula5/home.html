@@ -2,16 +2,44 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sistema Ponto - Home</title>
+	<!-- para icones de extensao .png -->
+	<link rel="icon" type="imagem/png" href="resources/img/hand-fist.png" />
 	
+	<!-- para icondes de extensao .ico -->
+	<!-- <link rel="shortcut icon" type="imagem/x-icon" href="link_do_icone.ico" /> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/home.css">
 </head>
 <body>
+	<ul class="menu">
+		<li>
+			<a href="home.html">
+				<i class="fa fa-clock-o" aria-hidden="true"></i> Registro
+			</a>
+		</li>
+		<li>
+			<a href="historico.html">
+				<i class="fa fa-calendar" aria-hidden="true"></i> Historico
+			</a>
+		</li>
+		<li>
+			<i class="fa fa-comment" aria-hidden="true"></i> Mensagens
+		</li>
+		<li>
+			<a href="index.html" class="btn btn-vermelho">
+				<i class="fa fa-sign-out" aria-hidden="true"></i> Sair
+			</a>
+		</li>
+	</ul>
+	<br />
 	<table class="table-default" border="2">
 		<thead>
 			<tr>
 				<td colspan="11">
-					<button class="btn-yellow">
+					<button class="btn-yellow" onclick="$('.tbody-table').append('<tr>'+$('.linha-base').html()+'</tr>');">
 						<i class="fa fa-plus" aria-hidden="true"></i> Nova Linha
 					</button>
 				</td>
@@ -30,37 +58,37 @@
 				<th>Acoes</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<td>
-					<input type="date" name="data" />
+		<tbody class="tbody-table">
+			<tr class="linha-base">
+				<td title="Data Atual/Registro">
+					<input type="date" name="data" readonly="true"/>
 				</td>
-				<td>
+				<td title="Hora Minuto de entrada">
 					<input type="time" name="entrada[]" />
 				</td>
-				<td>
+				<td title="Hora Minuto de saida">
 					<input type="time" name="saida[]" />
 				</td>
-				<td>
-					<input type="number" name="tempo[]" />
+				<td  title="Minutos trabalhados">
+					<input type="number" name="tempo[]" readonly="true"/>
 				</td>
-				<td>
+				<td title="Hora Minuto de entrada">
 					<input type="time" name="entrada[]" />
 				</td>
-				<td>
+				<td title="Hora Minuto de saida">
 					<input type="time" name="saida[]" />
 				</td>
-				<td>
-					<input type="number" name="tempo[]" />
+				<td  title="Minutos trabalhados">
+					<input type="number" name="tempo[]" readonly="true"/>
 				</td>
-				<td>
+				<td title="Hora Minuto de entrada">
 					<input type="time" name="entrada[]" />
 				</td>
-				<td>
+				<td title="Hora Minuto de saida">
 					<input type="time" name="saida[]" />
 				</td>
-				<td>
-					<input type="number" name="tempo[]" />
+				<td  title="Minutos trabalhados">
+					<input type="number" name="tempo[]" readonly="true"/>
 				</td>
 				<td>
 					<button class="btn btn-blue">
