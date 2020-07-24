@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fullcalendar/fullcalendar": "^3.10"
+    }
+}

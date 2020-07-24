@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Criador de email marketing</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="controles">
+			<form action="" method="GET">
+				<label>Cor do cabecalho</label>
+				<input type="color" onchange="$('.bg_cabecalho').css('background-color', $(this).val())" />
+				<label>Texto do cabecalho</label>
+				<input type="text" value="Nome Modelo" onblur="$('.txt_cabecalho').text($(this).val())" />
+				<label>Cor da fonte do texto no cabecalho</label>
+				<input type="color" />
+				<hr/>
+				<label>Cor do fundo do corpo</label>
+				<input type="color" />
+				<label>Texto caixa 1</label>
+				<textarea>curso 100% online com alto indice de aprovacao na prova</textarea>
+				<label>Cor do texto caixa 1</label>
+				<input type="color" />
+				<label>Texto caixa 2</label>
+				<textarea>Faca o diferencial, faca o melhor e aprove com qualidade</textarea>
+				<label>Cor do texto caixa 2</label>
+				<input type="color" />
+				<hr />
+				<label>Cor de fundo do rodape</label>
+				<input type="color" />
+				<label>Texto do rodape</label>
+				<input type="text" value="www.empresa.com.br"/>
+				<label>Cor do texto do rodape</label>
+				<input type="color" />
+			</form>
+		</div>
+		<div class="layout">
+			<table>
+				<tr class="bg_cabecalho">
+					<td colspan="2">
+						<font class="txt_cabecalho">Nome Modelo</font>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font>
+							curso 100% online com alto indice de aprovacao na prova
+						</font>
+					</td>
+					<td>
+						<font>Faca o diferencial, faca o melhor e aprove com qualidade</font>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<center>
+							<a class="btn" href="modelo.html" target="_blank">Comprar</a>
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<font>www.empresa.com.br</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

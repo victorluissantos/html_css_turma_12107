@@ -29,10 +29,12 @@ li.btn-vermelho:hover {
 }
 
 .box_mensagem {
+	display: none;
 	position: absolute;
 	background-color: #FF6347;
 	max-width: 320px;
 	margin-top: 0.9%;
+	z-index: 9;
 }
 
 .box_mensagem ul.list_mensagem {
@@ -45,4 +47,8 @@ li.btn-vermelho:hover {
 
 .box_mensagem ul.list_mensagem li:hover {
 	background-color: white;
+}
+
+.sub-item:hover .box_mensagem {
+	display: block;
 }

@@ -1,0 +1,23 @@
+.controles {
+	width: 50%;
+	float: left;
+}
+
+label, input, textarea {
+	width: 100%;
+}
+
+.layout {
+	width: 50%;
+	float: left;
+}
+
+.layout table tr {
+	width: 100%;
+	height: 90px;
+}
+
+.layout table tr td {
+	text-align: center;
+	padding: 8px;
+}
