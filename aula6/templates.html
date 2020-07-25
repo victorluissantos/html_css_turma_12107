@@ -14,25 +14,32 @@
 				<label>Texto do cabecalho</label>
 				<input type="text" value="Nome Modelo" onblur="$('.txt_cabecalho').text($(this).val())" />
 				<label>Cor da fonte do texto no cabecalho</label>
-				<input type="color" />
+				<input type="color" onchange="$('.txt_cabecalho').css('color', $(this).val())" />
 				<hr/>
 				<label>Cor do fundo do corpo</label>
-				<input type="color" />
+				<input type="color" onchange="$('.bg_corpo').css('background-color', $(this).val())"/>
 				<label>Texto caixa 1</label>
-				<textarea>curso 100% online com alto indice de aprovacao na prova</textarea>
+				<textarea onblur="$('.texto_cx_1').text($(this).val())">curso 100% online com alto indice de aprovacao na prova</textarea>
 				<label>Cor do texto caixa 1</label>
-				<input type="color" />
+				<input type="color" onchange="$('.texto_cx_1').css('color', $(this).val())" />
 				<label>Texto caixa 2</label>
-				<textarea>Faca o diferencial, faca o melhor e aprove com qualidade</textarea>
+				<textarea onblur="$('.texto_cx_2').text($(this).val())">Faca o diferencial, faca o melhor e aprove com qualidade</textarea>
 				<label>Cor do texto caixa 2</label>
-				<input type="color" />
+				<input type="color" onchange="$('.texto_cx_2').css('color', $(this).val())"/>
+				<hr />
+				<label>Cor de fundo do botao</label>
+				<input type="color" onchange="$('.btn').css('background-color',$(this).val())"/>
+				<label>Texto dentro do botao</label>
+				<input type="text" onblur="$('.btn').text($(this).val())"/>
+				<label>Link do botao</label>
+				<input type="text" onblur="$('.btn').attr('href',$(this).val())"/>
 				<hr />
 				<label>Cor de fundo do rodape</label>
-				<input type="color" />
+				<input type="color" onchange="$('.bg_rodape').css('background-color', $(this).val())" />
 				<label>Texto do rodape</label>
-				<input type="text" value="www.empresa.com.br"/>
+				<input type="text" onblur="$('.txt_rodape').text($(this).val())" value="www.empresa.com.br"/>
 				<label>Cor do texto do rodape</label>
-				<input type="color" />
+				<input type="color" onchange="$('.txt_rodape').css('color',$(this).val())" />
 			</form>
 		</div>
 		<div class="layout">
@@ -42,14 +49,16 @@
 						<font class="txt_cabecalho">Nome Modelo</font>
 					</td>
 				</tr>
-				<tr>
+				<tr class="bg_corpo">
 					<td>
-						<font>
+						<font class="texto_cx_1">
 							curso 100% online com alto indice de aprovacao na prova
 						</font>
 					</td>
 					<td>
-						<font>Faca o diferencial, faca o melhor e aprove com qualidade</font>
+						<font class="texto_cx_2">
+							Faca o diferencial, faca o melhor e aprove com qualidade
+						</font>
 					</td>
 				</tr>
 				<tr>
@@ -59,9 +68,9 @@
 						</center>
 					</td>
 				</tr>
-				<tr>
+				<tr class="bg_rodape">
 					<td colspan="2">
-						<font>www.empresa.com.br</font>
+						<font class="txt_rodape">www.empresa.com.br</font>
 					</td>
 				</tr>
 			</table>

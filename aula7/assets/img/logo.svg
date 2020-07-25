@@ -1,0 +1,19 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <title/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title stroke="#fbce33">Layer 1</title>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_2" d="m26,10a4.00018,4.00018 0 0 1 4,4" class="a"/>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_3" d="m34,14a4.00018,4.00018 0 0 1 4,-4" class="a"/>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_4" d="m38,18a4.00018,4.00018 0 0 0 -4,-4l-4,0a4.00018,4.00018 0 0 0 -4,4l0,4l12,0l0,-4z" class="a"/>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_5" d="m42,30l0,-4a4.00018,4.00018 0 0 0 -4,-4l-12,0a4.00018,4.00018 0 0 0 -4,4l0,4" class="a"/>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_6" d="m42,41.9995l0,2.0005a10,10 0 0 1 -20,0l0,-2.0005" class="a"/>
+  <path stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_7" d="m36,42a4.00018,4.00018 0 0 1 -4,-4a4.00018,4.00018 0 0 1 -4,4l-10,0a8,8 0 0 1 -8,-8l0,-4l18,0a4.00018,4.00018 0 0 1 4,4a4.00018,4.00018 0 0 1 4,-4l18,0l0,4a8,8 0 0 1 -8,8l-10,0z" class="a"/>
+  <line stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_8" y2="34" y1="38" x2="32" x1="32" class="a"/>
+  <line stroke-width="4px" stroke-linejoin="round" stroke-linecap="round" stroke="#fbce33" fill="none" id="svg_9" y2="36" y1="36" x2="42" x1="22" class="a"/>
+ </g>
+</svg>

@@ -21,3 +21,9 @@ label, input, textarea {
 	text-align: center;
 	padding: 8px;
 }
+
+.btn {
+	padding: 14px;
+	background-color: gray;
+	color: gold;
+}
