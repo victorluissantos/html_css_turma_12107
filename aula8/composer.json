@@ -1,0 +1,22 @@
+{
+    "name": "PirateBy",
+    "description": "Mistura de banco imobiliario com xadrez com estilo viking",
+    "require": {
+        "twbs/bootstrap": "4.4.1",
+        "components/jquery": "3.4.1",
+		"popper": "*"
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "popper",
+				"version": "1.16.0",
+				"dist": {
+					"url": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+					"type": "file"
+				}
+			}
+		}
+	]
+}

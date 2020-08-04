@@ -1,62 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Animacao</title>
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
-</head>
-<body class="bg">
-	<audio controls autoplay loop>
-		<source src="assets/audio/Scotland Glasgow Clanadonia.mp3" type="audio/mp3">
-	</audio>
-
-	<div class="person"></div>
-	<div class="cs casa_1 active"></div>
-	<div class="cs casa_2"></div>
-	<div class="cs casa_3"></div>
-	<div class="cs casa_4"></div>
-	<div class="cs casa_5"></div>
-	<div class="cs casa_6"></div>
-	<div class="cs casa_7"></div>
-	<div class="cs casa_8"></div>
-	<div class="cs casa_9"></div>
-	<div class="cs casa_10"></div>
-
-	<div id="dado" onclick="rand_dado()">
-		<div class="point div_1"></div>
- 		
- 		<div class="point div_2"></div>
- 		<div class="point div_2"></div>
-
-		<div class="point div_3"></div>
-		<div class="point div_3"></div>
-		<div class="point div_3"></div>
-
-		<div class="point div_4"></div>
-		<div class="point div_4"></div>
-		<div class="point div_4"></div>
-		<div class="point div_4"></div>
-
-		<div class="point div_5"></div>
-		<div class="point div_5"></div>
-		<div class="point div_5"></div>
-		<div class="point div_5"></div>
-		<div class="point div_5"></div>
-
-		<div class="point div_6"></div>
-		<div class="point div_6"></div>
-		<div class="point div_6"></div>
-		<div class="point div_6"></div>
-		<div class="point div_6"></div>
-		<div class="point div_6"></div>
-	</div>
-
-	<div id="squared">
+	<head>
+		<meta charset="utf-8">
+		<title>Animacao</title>
 		
-	</div>
-</body>
+		<link rel="stylesheet" type="text/css" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body class="bg">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="index.html">
+		  	
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarText">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">PirateBy <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item" title="Copos de Agua">
+		        <a id="agua" class="nav-link" href="#">
+		        	5 <img src="" alt="Copos de agua"/>
+		        </a>
+		      </li>
+		      <li class="nav-item" title="Moedas de Ouro">
+		        <a id="moeda" class="nav-link" href="#">
+		        	8 <img src="" alt="Moedas de ouro"/>
+		        </a>
+		      </li>
+		    </ul>
+			<audio controls autoplay loop>
+				<source src="assets/audio/Scotland Glasgow Clanadonia.mp3" type="audio/mp3">
+			</audio>
+		    <span class="navbar-text">
+		    	victorluissantos@live.com
+		    </span>
+		  </div>
+		</nav>
+
+		<div class="person"></div>
+		<div class="cs casa_1 active" data-toggle="tooltip" data-placement="top" title="Sem Acoes reservadas a este territorio"></div>
+		<div class="cs casa_2" data-moeda="10" data-toggle="tooltip" data-placement="top" title="Baita sorte ganhou 10 moedas de ouro"></div>
+		<div class="cs casa_3" data-agua="-10" data-toggle="tooltip" data-placement="top" title="O passaro voltou sem terra nos pes, perdeu 10 copos de agua"></div>
+		<div class="cs casa_4" data-moeda="-30" data-toggle="tooltip" data-placement="top" title="Ataque de inimigos, perdeu 30 moedas de ouro"></div>
+		<div class="cs casa_5" data-agua="-15" data-toggle="tooltip" data-placement="right" title="O passaro nao voltou, esta com sorte, ganhou 15 copos de agua"></div>
+		<div class="cs casa_6" data-agua="-5" data-toggle="tooltip" data-placement="bottom" title="O mar esta agitado, nao conseguiu pescar, perdeu 5 copos de agua"></div>
+		<div class="cs casa_7" data-agua="-5" data-toggle="tooltip" data-placement="bottom" title="Ficou doente, perdeu 5 copos de agua"></div>
+		<div class="cs casa_8" data-moeda="10" data-toggle="tooltip" data-placement="bottom" title="Pescou em dobro, ganhou 10 moedas"></div>
+		<div class="cs casa_9" data-moeda="-5" data-toggle="tooltip" data-placement="bottom" title="A comida do barco esta acabando, perdeu 5 moedas de ouro"></div>
+		<div class="cs casa_10" data-moeda="20" data-toggle="tooltip" data-placement="left" title="Chegou ao fim do arco-iris, ganhe 20 moedas de ouro"></div>
+
+		<div id="dado" onclick="rand_dado()">
+			<div class="point div_1"></div>
+	 		
+	 		<div class="point div_2"></div>
+	 		<div class="point div_2"></div>
+
+			<div class="point div_3"></div>
+			<div class="point div_3"></div>
+			<div class="point div_3"></div>
+
+			<div class="point div_4"></div>
+			<div class="point div_4"></div>
+			<div class="point div_4"></div>
+			<div class="point div_4"></div>
+
+			<div class="point div_5"></div>
+			<div class="point div_5"></div>
+			<div class="point div_5"></div>
+			<div class="point div_5"></div>
+			<div class="point div_5"></div>
+
+			<div class="point div_6"></div>
+			<div class="point div_6"></div>
+			<div class="point div_6"></div>
+			<div class="point div_6"></div>
+			<div class="point div_6"></div>
+			<div class="point div_6"></div>
+
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+			<div class="point div_7"></div>
+
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+			<div class="point div_8"></div>
+
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+			<div class="point div_9"></div>
+
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+			<div class="point div_10"></div>
+		</div>
+
+		<div id="squared"></div>
+	</body>
+	<script src="vendor/components/jquery/jquery.min.js"></script>
+	<script src="vendor/popper/popper.min.js"></script>
+	<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </html>
