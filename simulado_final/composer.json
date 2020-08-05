@@ -1,0 +1,8 @@
+{
+    "name": "Simuladi Final",
+    "description": "Tela de prova/simulado final com comentarios",
+    "require": {
+        "twbs/bootstrap": "3.3.7",
+        "components/jquery": "1.12.4"
+	}
+}
